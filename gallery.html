@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | P.K. Signnate LED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">PK</span><span>P.K. Signnate LED</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner reveal">
+        <p class="eyebrow">Gallery</p>
+        <h1>LED lighting projects with a clean lightbox preview.</h1>
+        <p>Browse pendant lights, ceiling features, display lighting, and interior LED installations. Select any project to preview it larger.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="gallery-grid">
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/chandelier-rings.jpeg">
+          <img src="assets/gallery/chandelier-rings.jpeg" alt="Modern LED ring chandelier">
+          <span class="gallery-caption">LED Ring Chandelier</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/cone-pendant-lights.jpeg">
+          <img src="assets/gallery/cone-pendant-lights.jpeg" alt="Cone pendant LED lights">
+          <span class="gallery-caption">Cone Pendant Lights</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/blue-led-workspace.jpeg">
+          <img src="assets/gallery/blue-led-workspace.jpeg" alt="Blue LED workspace lighting setup">
+          <span class="gallery-caption">Workspace LED Strip</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/interior-panel-spotlight.jpeg">
+          <img src="assets/gallery/interior-panel-spotlight.jpeg" alt="Interior wall panel and studio spotlight">
+          <span class="gallery-caption">Interior Accent Lighting</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/loop-ceiling-lights.jpeg">
+          <img src="assets/gallery/loop-ceiling-lights.jpeg" alt="Loop LED ceiling lights">
+          <span class="gallery-caption">Loop Ceiling Lights</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/shelf-led-strip.jpeg">
+          <img src="assets/gallery/shelf-led-strip.jpeg" alt="Warm LED strip lighting on display shelves">
+          <span class="gallery-caption">Shelf LED Strip</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/rose-gold-led-pendant.jpeg">
+          <img src="assets/gallery/rose-gold-led-pendant.jpeg" alt="Rose gold LED pendant light">
+          <span class="gallery-caption">Rose Gold Pendant</span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/gallery/white-pendant-trio.jpeg">
+          <img src="assets/gallery/white-pendant-trio.jpeg" alt="Three white pendant lamps">
+          <span class="gallery-caption">White Pendant Trio</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button type="button" aria-label="Close preview" data-close-lightbox>&times;</button>
+    <img id="lightboxImage" src="assets/gallery/chandelier-rings.jpeg" alt="Gallery preview">
+  </div>
+
+  <footer class="site-footer"><strong>P.K. Signnate LED</strong><span>Project gallery</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
